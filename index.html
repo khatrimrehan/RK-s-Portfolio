@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="ri-close-large-fill"></i></a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+            <ul class="menu">
+                <li><img src="RK logo white.png" alt=""></li>
+                <li class="hideOnMobile"><a href="/">Home</a></li>
+                <li class="hideOnMobile"><a href="/">Projects</a></li>
+                <li class="hideOnMobile"><a href="/">Services</a></li>
+                <li class="hideOnMobile"><a href="/">Contact</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="ri-menu-fill"></i></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+         function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>

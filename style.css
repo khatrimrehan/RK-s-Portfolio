@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('main.JPG');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    background-color: #ffffff09;
+    backdrop-filter: blur(30px);
+   /** margin: 0 15px 15px;**/
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+.main ul{
+    background-color: white;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav li {
+    height: 50px;
+}
+
+
+
+.menu li a:hover {
+    background-color: white;
+    color: #0b0049;
+    border-radius: 3px;
+    border: 1px #0b0049;
+}
+
+nav li img {
+    height: 40px;
+}
+
+nav li img:hover {
+    cursor: pointer;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 4px;
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(50px);
+    background-color: #101c42;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu i {
+    font-size: 1.67rem;
+}
+
+.sidebar i {
+    font-size: 1.67rem;
+    margin-top: 7px;
+    padding: 7px;
+    margin-left: 125.5px;
+}
+.sidebar li{
+    margin: 10px;
+    width: 100%;
+            
+}
+.menu-btn{
+    display: none;
+}
+
+.sidebar li a:hover{
+background-color: white;
+color: #0b0049;
+border-radius: 5px;
+}
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+
+

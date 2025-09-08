@@ -49,6 +49,8 @@ nav li a {
 
 .menu li a:hover {
     color: rgb(208, 208, 208);
+    border: .99px solid #ffffff ;
+    border-radius: 5px;
 }
 
 nav li img {
@@ -61,7 +63,7 @@ nav li img:hover {
 
 nav a {
     height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -218,7 +220,7 @@ a {
     display: inline-block;
     font-size: 25px;
     margin: 15px -5px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 
     font-family: "Ubuntu", sans-serif;
@@ -226,4 +228,9 @@ a {
     font-style: normal;
     font-size: 25px;
     color: #ffffff;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #101c42;
 }

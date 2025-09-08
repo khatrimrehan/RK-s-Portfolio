@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RK's Portfolio</title>
@@ -21,12 +27,12 @@
                 <li><a href="/">Contact</a></li>
             </ul>
             <ul class="menu">
-                <li><img src="RK logo white.png" alt=""></li>
+                <li class="mar0"><img src="RK logo white.png" alt=""></li>
                 <li class="hideOnMobile"><a href="/">Home</a></li>
                 <li class="hideOnMobile"><a href="/">Projects</a></li>
                 <li class="hideOnMobile"><a href="/">Services</a></li>
                 <li class="hideOnMobile"><a href="/">Contact</a></li>
-                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="ri-menu-fill"></i></i></a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="ri-menu-fill"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -35,12 +41,28 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
         }
-         function hideSidebar() {
+        function hideSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
     </script>
-</body>
 
+
+    <!-- Home Section Start -->
+    <div id="hero">
+        <div class="home-content">
+            <div class="text-one">Hello,</div>
+            <div class="text-two">I'm RK</div>
+            <div class="text-three">Web-Developer</div>
+            <div class="text-four">From India</div>
+        </div>
+        <div class="button">
+            <a href="mailto:khatrimrehan@gmail.com"><button class="btn">Contact Me</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
 
 </html>

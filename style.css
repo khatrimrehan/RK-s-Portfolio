@@ -1,236 +1,311 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-body {
-    min-height: 100vh;
-    background-image: url('main.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-nav {
-    background-color: #ffffff09;
-    backdrop-filter: blur(30px);
-    /** margin: 0 15px 15px;**/
-    height: 45px;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-}
-
-.main ul {
-    background-color: white;
-}
-
-nav ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-nav li {
-    height: 50px;
-
-}
-
-nav li a {
-    font-size: 18.5px;
-}
-
-
-
-.menu li a:hover {
-    color: rgb(208, 208, 208);
-    border: .99px solid #ffffff ;
-    border-radius: 5px;
-}
-
-nav li img {
-    height: 33px;
-}
-
-nav li img:hover {
-    cursor: pointer;
-}
-
-nav a {
-    height: 100%;
-    padding: 0 15px;
+    box-sizing: border-box;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
-
-nav li:first-child {
-    margin-right: auto;
-}
-
-nav img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    padding: 4px;
-
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    backdrop-filter: blur(50px);
-    background-color: #101c42;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.menu i {
-    font-size: 1.8rem;
-}
-
-.sidebar i {
-    font-size: 1.8rem;
-    margin-top: 7px;
-    padding: 7px;
-    margin-left: 125.5px;
-}
-
-.sidebar li {
-    margin: 10px;
-    width: 100%;
-
-}
-
-.sidebar li a:hover {
-    color: rgb(208, 208, 208);
-}
-
-.menu-btn {
-    display: none;
-}
-
-
-
-
-@media(max-width: 800px) {
-    .hideOnMobile {
-        display: none;
-    }
-
+    scroll-behavior: smooth;
+    font-family: 'UBUNTU';
     
-
-    .menu-btn {
-        display: block;
-    }
+    
 }
 
-.home-content {
-    color: white;
+/*navbar styling*/
+body{
+    height: 100vh;
+    width: 100%;
+    background: url('main.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav {
+    background: #101c42;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'ubuntu';
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-
+    margin: auto;
 }
 
-#hero {
-    padding-top: 315px;
-    margin-left: 100px;
-    /** font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;**/
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+nav .navbar .menu {
+    display: flex;
+    position: relative;
+}
+nav .navbar .sidebar {
+    display: flex;
+    
 }
 
-.home-content .text-one {
-
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: #b1b1b1;
-
-    /**ubuntu-bold 
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;**/
-
+nav .navbar .menu li {
+    list-style: none;
+    margin: o 8px;
 }
-
-.home-content .text-two {
-
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 75px;
-    color: #ffffff;
-}
-
-
-.home-content .text-three {
-
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: #b1b1b1;
-}
-
-.home-content .text-four {
-
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 23px;
-    padding-top: 7px;
-    color: #b1b1b1;
-}
-
-a {
-
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.btn {
-    background-color: #101c42;
+nav .navbar .sidebar li {
+    list-style: none;
+    padding:  20x;
     color: white;
-    border: none;
-    padding: 10px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 15px -5px;
-    border-radius: 8px;
-    cursor: pointer;
+    
+    font-size: 1.5rem;
+}
+nav .navbar .sidebar li a{
+    color: white;
+    }
 
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: #ffffff;
+.sidebar .cn{
+margin: 10px 0;
+width: 100%;
+padding-top: 10px;
+padding-left: 40px;
+
 }
 
-.btn:hover{
-    background-color: rgba(255, 255, 255, 0.897);
-    color: #101c42;
+
+
+/*pddding ke 6px 0 karan jo ai*/
+.navbar .menu a{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.4s ease;
+}
+
+.navbar .menu a{
+    color: white;
+}
+
+.navbar .menu a:hover{
+    color: #9ED0E6;
+}
+
+.thelogo{
+    width: 38px;
+}
+
+#logo{
+    right: 7rem;
+    top: 1px;
+    text-decoration: none;
+    font-size: 2px;
+}
+
+.home{
+    font-family: 'ubuntu';
+}
+.home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 400px;
+    padding-bottom: 328px
+}
+.home .text-one{
+    font-size: 25px;
+    color: #989898;
+    margin: 2px 0;
+}
+
+.home .text-two{
+    font-size: 75px;
+    color: #fbfbfb;
+    font-weight: 700;
+    margin-left: -3px;
+}
+.home .text-two span{
+color: #a9d7ff;
+}
+/*responsive side bar*/
+
+
+
+.home .text-three{
+    font-size: 40px;
+    color: #989898;
+    margin: 4px 0;
+}
+
+.home .text-four{
+    font-size: 25px;
+    color: #989898;
+    margin: 9px 0;
+}
+
+/*about section*/
+section{
+    padding-top: 40px;
+    
+}
+.about{
+    background-color: #ffffff;
+    
+}
+
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'poppins';
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+     color: #0e2431;
+     font-size: 30px;
+     font-weight: 600;
+     position: relative;
+     padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #4563bc;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .about-details .left{
+    width: 45%;
+}
+
+.about .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+
+section  .topic{
+  color: #0E2431;
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p{
+text-align: justify;
+color: #0e2431;
+font-size: 14px;
+margin: 30px 0;
+
+}
+
+section .button{
+    margin: 16px 0;
+}
+
+section .button a{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #1a2e67;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+section .button a:hover{
+    border-color: #1a2e67;
+    background-color: #fff;
+    color: #1a2e67;
+}
+.right .media-icons a{
+    color: #1a2e67;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  section .content{
+    width: 85%;
+  }
+  
+  .home .text-two{
+    font-size: 50px;
+  }
+  .home .text-three{
+    font-size: 30px;
+  }
+  
+  .home .home-content{
+    padding-top:280px ;
+  }
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 500px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+  section .topic{
+    font-size: 18px;
+  }
+  .about-details .right p{
+    font-size: 13.5px;
+  }
+
 }

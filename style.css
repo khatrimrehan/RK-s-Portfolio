@@ -278,9 +278,10 @@ section .button a:hover {
   
 }
 
-i{
+.menu-btn i{
 font-size: 36px;
 }
+
 
 
 

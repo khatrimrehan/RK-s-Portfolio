@@ -104,11 +104,14 @@ nav .navbar .sidebar li a {
 }
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   background: url('main.JPG');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
 }
 
@@ -281,6 +284,7 @@ section .button a:hover {
 .menu-btn i{
 font-size: 36px;
 }
+
 
 
 

@@ -15,8 +15,8 @@
     font-size: 20px;
   }
 
-  .button .but-1 {
-    font-size: 17px;
+  .menu-btn i{
+    font-size: 25px;
   }
 
   .menu .menu-btn{
@@ -70,5 +70,10 @@
   .about-details .right p {
     font-size: 16px;
   }
-
+  nav{
+    padding: 3px 0;
+  }
+  .thelogo{
+    width: 25px;
+  }
 }

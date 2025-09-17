@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .about .left img {
     height: 350px;
     width: 350px;
@@ -77,6 +77,26 @@
     width: 25px;
     margin-left: 18px;
   }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
 }
-
-
